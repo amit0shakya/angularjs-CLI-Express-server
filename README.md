@@ -11,7 +11,7 @@
 	This command build a dist folder on root that you can fild index.html
 
 6) Install Express dependencies -
-	npm install --save express body-parser
+	npm install express body-parser --save
 
 7) Create server folder and server.js on root in angular project
 
@@ -61,6 +61,7 @@ const server = http.createServer(app);
  */
 server.listen(port, () => console.log(`API running on localhost:${port}`));
 
+________________________________________________________________________________
 
 9) Create routes folder under server folder which is on root and create app.js into route folder
 	paste the following code into it
@@ -77,10 +78,12 @@ router.get('/', (req, res) => {
 
 module.exports = router;
 
+_________________________________________________________________________________
+
 10) build the project using command ng build
 
 11) run node server - Check your app on browser localhost://3000 it shows app works!, and localhost://3000/api shows api works which is showing output of api.js
 
-Pull this branch of the same code
+Pull this branch for the same code
 
 Cheers :)
